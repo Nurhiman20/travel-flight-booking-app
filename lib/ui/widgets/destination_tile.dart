@@ -55,27 +55,27 @@ class DestinationTile extends StatelessWidget {
                     city,
                     style: greyTextStyle.copyWith(fontWeight: light),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        width: 20,
-                        height: 20,
-                        margin: const EdgeInsets.only(right: 2),
-                        decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('assets/icon_star.png'))),
-                      ),
-                      Text(
-                        rating.toString(),
-                        style: blackTextStyle.copyWith(fontWeight: medium),
-                      )
-                    ],
-                  ),
                 ],
               ),
-            )
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 20,
+                  height: 20,
+                  margin: const EdgeInsets.only(right: 2),
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('assets/icon_star.png'))),
+                ),
+                Text(
+                  rating.toString(),
+                  style: blackTextStyle.copyWith(fontWeight: medium),
+                )
+              ],
+            ),
           ],
         ),
       ),
