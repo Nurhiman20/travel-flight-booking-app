@@ -1,3 +1,4 @@
+import 'package:airplane/cubit/auth_cubit.dart';
 import 'package:airplane/cubit/page_cubit.dart';
 import 'package:airplane/ui/pages/bonus_page.dart';
 import 'package:airplane/ui/pages/get_started_page.dart';
@@ -22,13 +23,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => PageCubit())],
+      providers: [
+        BlocProvider(create: (context) => PageCubit()),
+        BlocProvider(create: (context) => AuthCubit())
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
           '/': (context) => const SplashPage(),
           '/get-started': (context) => const GetStartedPage(),
-          '/sign-up': (context) => const SignUpPage(),
+          '/sign-up': (context) => SignUpPage(),
           '/bonus': (context) => const BonusPage(),
           '/main': (context) => const MainPage()
         },
