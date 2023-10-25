@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "762155180585",
+    "project_id": "airplane-86e88",
+    "storage_bucket": "airplane-86e88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762155180585:android:e19308980b25bcd5dab238",
+        "android_client_info": {
+          "package_name": "com.nurhiman_a.airplane"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnMbg6_O9ZY4uG4KCWMbc42n_QddJMtlo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
